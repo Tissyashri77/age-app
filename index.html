@@ -15,17 +15,20 @@
 <body>
   <div class="container">
       <div class="date">
-            <div id="day">
-              <p>DAY</p>
-              <input type="number" name="" id="day-box" placeholder="DD">
+            <div id="day" class="error-prompt" >
+              <p >DAY</p>
+              <input type="number" name="" id="day-box" placeholder="DD" >
+              <h4 class="error-para">Must be a valid date</h4>
             </div>
-            <div id="month">
+            <div id="month"  class="error-prompt">
               <p>MONTH</p>
-              <input type="number" name="" id="month-box"  placeholder="MM">
+              <input type="number" name="" id="month-box"  placeholder="MM" >
+              <h4  class="error-para">Must be a valid month</h4>
             </div>
-            <div id="year">
+            <div id="year"  class="error-prompt">
               <p>YEAR</p>
-               <input type="number" name="" id="year-box" placeholder="YYYY">
+              <input type="number" name="" id="year-box" placeholder="YYYY">
+              <h4  class="error-para">Must be in the past</h4>
             </div>
       </div>
       
@@ -37,18 +40,18 @@
       <div class="calculated">
 
         <div id="calc-year">
-             <span id="year-span"> - -</span>
-             <p>years</p>
+             <span id="year-span"><i> - -</i></span>
+             <p><i>years</i></p>
         </div>
 
         <div id="calc-months">
-          <span   id="months-span"> - -</span>
-          <p>months</p>
+          <span   id="months-span"><i> - -</i></span>
+          <p><i>months</i></p>
         </div>
 
         <div id="calc-days">
-          <span   id="days-span"> - -</span>
-          <p>days</p>
+          <span   id="days-span"><i>- -</i></span>
+          <p><i>days</i></p>
         </div>
 
       </div>

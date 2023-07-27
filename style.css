@@ -1,5 +1,4 @@
-
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -18,10 +17,9 @@ body {
 }
 
 .container{
-    width: 35%;
-    height: 65%;
+    width: 25%;
+    height: 55%;
     background-color: white;
-    color: black;
     padding: 30px;
     border-radius: 20px;
     border-bottom-right-radius: 180px ;
@@ -51,7 +49,8 @@ body {
 
 .date input {
     border: none;
-    width: 80px;
+    width: 100px;
+    height: 40px;
     padding: 10px;
     border-radius: 10px;
     outline: 1px hsl(0, 1%, 44%) solid;
@@ -82,9 +81,6 @@ svg{
     object-fit: cover;
 }
 
-.calculated{
-
-}
 
 #calc-year , #calc-months , #calc-days {
     display: flex;
@@ -95,23 +91,106 @@ svg{
 
 #year-span {
     color: hsl(259, 100%, 65%) ;
-    font-size: 34px;
+    font-size: 38px;
 }
 
 #months-span {
     color: hsl(259, 100%, 65%) ;
-    font-size: 34px;
+    font-size: 38px;
 }
 
 
 #days-span {
     color: hsl(259, 100%, 65%) ;
-    font-size: 34px;
+    font-size: 38px;
     font-weight: 800;
 }
 
 #calc-year , #calc-months , #calc-days p {
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 900;
     color: black;
+
+}
+
+.error-prompt{
+    display: none;
+}
+
+.error-prompt-inp {
+    /* display: none; */
+    outline: 1px red solid;
+  
+}
+
+.error-prompt-para {
+    display: none;
+    color: red;
+}
+
+.error-para{
+    display: none;
+    color: red;
+    font-size: 9px;
+    display: none;
+    margin-top: 5px;
+}
+
+
+@media only screen and (min-width:1000px) and (max-width:1500px){
+
+    .container{
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width:801px) and (max-width:999px){
+
+    .container{
+        width: 50%;
+    }
+
+}
+
+
+
+@media only screen and (max-width:800px){
+
+    .container{
+        width: 70%;
+        height: 65%;
+    }
+    #calc-year , #calc-months , #calc-days p {
+        font-size: 40px;
+         
+    }
+
+}
+
+@media only screen and (max-width:600px){
+
+    .container{
+        width: 80%;
+        height: 65%;
+    }
+    #calc-year , #calc-months , #calc-days p {
+        font-size: 40px;
+         
+    }
+
+}
+
+@media only screen and (max-width:550px){
+
+    .container{
+        width: 95%;
+        height: 65%;
+    }
+
+    #calc-year , #calc-months , #calc-days p {
+        font-size: 40px;
+         
+    }
+
 }
