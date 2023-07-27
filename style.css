@@ -171,7 +171,7 @@ svg{
 @media only screen and (max-width:600px){
 
     .container{
-        width: 80%;
+        width: 95%;
         height: 65%;
     }
     #calc-year , #calc-months , #calc-days p {
